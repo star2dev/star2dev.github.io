@@ -1,0 +1,251 @@
+/*
+
+Bruce on Github
+
+*/
+
+body {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.github-site-logo {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.github-site-logo > span {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border: 2px solid white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 4px;
+    transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s !important;
+}
+.github-site-logo > span:first-child {
+    z-index: 1;
+    background-color: #262626;
+}
+.github-site-logo > span:nth-child(2) {
+    z-index: 0;
+    background-color: #33CCCC;
+}
+.github-site-header:hover .github-site-logo > span:first-child {
+    -webkit-animation: counterspin 1.5s linear infinite;
+    animation: counterspin 1.5s linear infinite;
+}
+.github-site-header:hover .github-site-logo > span:nth-child(2) {
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+.github-site-title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    font-size: 2.2rem;
+}
+
+.github-site-header {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes counterspin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+.github-welcome-text {
+    margin-top: 5px;
+    margin-bottom: 65px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.github-font-400 {
+    font-weight: 400;
+}
+
+.github-text-light-gray {
+    color: #CDCDCD;
+}
+
+.github-text-gray {
+    color: #CCCCCC;
+}
+
+.github-text-white {
+    color: #FFFFFF;
+}
+
+a.github-text-white:hover,
+a.github-text-white:focus {
+    color: #FFFFFF;
+}
+
+.github-text-green {
+    color: #99CC66;
+}
+
+.github-text-cyan {
+    color: #33CCCC;
+}
+
+.github-text-yellow {
+    color: #FFFF66;
+}
+
+.github-text-orange {
+    color: #CC9966;
+}
+
+.github-bg-dark {
+    background-color: #262626;
+}
+
+hr {
+    border-color: #666666;
+    max-width: 70%;
+}
+
+.github-timeline-item {
+    margin-left: 70px;
+}
+
+.github-timeline-item-inner {
+    display: flex;
+    align-items: center;
+}
+
+.github-img-timeline {
+    width: 160px;
+    height: 160px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 3px solid #404040;
+    box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s !important;
+}
+.github-img-timeline:hover {
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 40px 58px -16px, rgba(0, 0, 0, 0.72) 0px 30px 22px -10px;
+    transform: scale(1.05);
+}
+
+.github-timeline-connector {
+    width: 55px;
+    height: 3px;
+    background-color: #404040;
+}
+
+.github-timeline-connector-vertical {
+    height: 60px;
+    width: 3px;
+    background-color: #404040;
+    margin-left: 260px;
+}
+
+.github-timeline-description {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 20px;
+    padding: 35px 40px;
+    max-width: 712px;
+    border: 3px solid #404040;
+    box-shadow: rgba(0, 0, 0, 0.49) 0px 16px 20px -20px, rgba(0, 0, 0, 0.53) 0px 16px 10px -10px;
+}
+.github-timeline-description p a {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 4px;
+    vertical-align: middle;
+    font-size: .9rem;
+    text-decoration: none;
+    background-color: transparent;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,.5));
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+    transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s !important;
+}
+.github-timeline-description p a:hover {
+    border-color: rgba(255,255,255,.25);
+    color: #CCC;
+}
+
+.github-section-mb {
+    margin-bottom: 85px;
+}
+
+p {
+    line-height: 1.9;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1310px;
+    }
+    .github-container-2 {
+        max-width: 1170px;
+    }
+}
+
+@media (max-width: 991px) {
+    .github-timeline-item {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .github-timeline-item {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 584px) {
+    .github-timeline-item-inner {
+        flex-direction: column;
+    }
+    .github-timeline-connector {
+        width: 3px;
+        height: 55px;
+    }
+    .github-timeline-connector-vertical {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 540px;
+    }
+}
